@@ -1,0 +1,934 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+      background-image: url(../image4/pexels-elti-meshau-333850.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: inherit;
+      height: 100%;
+  }
+ 
+  .maincontent {
+    padding-left: 40px;
+  }
+
+  /*style navigation menu*/
+  h1,p,a, label {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+  
+h1 {
+  text-align: center;
+}
+
+ a{
+   text-decoration: none;
+  }
+
+ .navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 0.7%;
+    padding-bottom: 0.7%;
+    background-color: #000000;
+    font-size: 20px;
+    height: 5vh;
+  }
+  .logo_header {
+    height: fit-content;
+  }
+  .logo{
+    margin-left: 0.3%;
+  }
+
+ .logo_header{
+    display: flex;
+    margin-left: 2%;
+  }
+
+  .main_nav{
+    display: flex;
+    width: 50%;
+    float: right;
+    margin-right: 2%;
+    justify-content: space-between;
+    list-style: none;
+  }
+
+  .main_nav a:hover{
+    color: rgb(236, 5, 5)
+  }
+
+  .main_nav li{
+      align-items: center;
+    display: inline;
+    color: #ffffff;
+  }
+
+  .main_nav li a{
+    color: #ffffff;
+  }
+
+  footer {
+
+    background-color: black;
+  }
+  footer>p {
+    text-align: center;
+    font-size: 30px;
+  }
+  @media only screen and (min-width : 693px) {
+
+
+  .welcome h1, .content h1, .content2 h1 {
+      padding-top: 20px;
+      text-align: center;
+      font-size: 40px;
+      letter-spacing: 1.2px;
+  }
+
+  .par {
+      text-align: center;
+      font-size: 30px;
+      padding-top: 30px;
+  }
+
+
+  .content {
+      width: 80%;
+      padding-top: 100px;
+      margin-right: auto;
+      margin-left: auto;
+  }
+
+  /*style slideshow*/
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 80%;
+  position: relative;
+  margin: auto;
+  height: 80vh;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 16px;
+  margin-top: -22px;
+  color: rgb(243, 10, 10);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: black;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.divnavdots {
+  padding-top: 20px;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.1s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.mySlides img {
+    display: block;
+    height: 60vh;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/*style showimes*/
+.tables {
+  margin-left: -5px;
+  margin-right: -5px;
+}
+#showtimes {
+  width: 100%;
+  padding: 5px;
+}
+.showtimes, .ticketprices {
+  border-collapse: collapse;
+  padding-top: 10px;
+}
+.showtimes {
+  width: 60%;
+  float: left;
+}
+
+#tblshowtimes {
+  font-size: 50px;
+  text-align: center;
+  margin: auto;
+  color: whitesmoke;
+}
+.showtimes, .ticketprices,.showtimes td, .showtimes th,.showtimes tr, #head, .ticketprices th, .ticketprices td, .ticketprices tr {
+  border: 1px groove black;
+  margin-top: 40px;
+}
+
+td, th {
+  padding: 6px;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 50px;
+}
+
+th {
+  font-weight: bolder;
+  font-size: 20px;
+}
+tr:not(#tr1) {
+  background-color: rgb(18, 18, 19);
+  color: white;
+}
+
+.showtimes tr {
+  background-color:rgb(161, 51, 37);
+  color: white;
+}
+
+.ticketprices{
+  empty-cells: hide;
+  width: fit-content;
+  background-color: orange;
+  float: right;
+  margin-top: 0px;
+}
+
+.ticketprices tr, .showtimes tr {
+  height: 50px;
+  margin-top: 0;
+}
+/*--------clearing floats-------*/
+.tables ::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/*end styling*/
+/*end styling*/
+
+/*--------style genre page*/
+#genre,#divform {
+  width: 80%;
+  margin: auto;
+
+}
+
+#para {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 1.3px;
+  margin: 30px;
+}
+
+#genrelist {
+  margin: 0;
+  border-top: 1px groove black;
+  border-bottom: 1px groove black;
+}
+
+#genrelist>li {
+  list-style-type: none;
+  display: block;
+  text-align: center;
+  padding: 10px;
+}
+
+#genrelist>li> a{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+  line-height: 40px;
+  font-size: 35px;
+  color: white;
+  transition: 0.1s;
+}
+
+#genrelist>li> a:hover {
+  transform: scale(0.8);
+  transition: 0.1s;
+  transform: scale(1.1),translate(-50%, -50%);
+  text-shadow: 1px -1px 0 rgb(100, 54, 45), 2px -2px 0 rgb(100, 54, 45), 3px -3px 0 rgb(100, 54, 45);
+}
+/*end styling*/
+/*style upcoming page*/
+.content2 :not(#except, .noflex) {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.upcoming {
+  text-align: center;
+  margin: 20px;
+}
+
+#divupcome>#divaction, #divupcome>#divanimation, #divupcome>#divcomedy, #divupcome>#divhorror, #divupcome>#divromance, #divupcome>#divscifi {
+  width: 40%;
+  height: 90vh;
+  margin: 10px;
+  margin: auto;
+}
+#divaction, #divcomedy, #divromance  {
+  margin-left: 30px;
+  float: left;
+}
+
+#divanimation, #divhorror, #divscifi {
+  float: right;
+}
+#divupcome>#divaction>img, #divanimation>img, #divcomedy>img, #divhorror>img, #divromance>img, #divscifi>img  {
+  height: 70%;
+  width: 40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+}
+
+#divupcome>#divaction>h1, #divupcome>#divanimation>h1, #divupcome>#divcomedy>h1, #divupcome>#divhorror>h1, #divupcome>#divromance>h1, #divupcome>#divscifi>h1{
+  padding-bottom: 20px;
+  padding-left: 50px;
+  text-align: center;
+}
+
+.upcoming {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  line-height: 25px;
+  font-size: 20px;
+  letter-spacing: 1.2px;
+  text-align: center;
+  padding:10px;
+}
+
+
+
+#btnmore {
+  Width: 100px;
+  height: 30px;
+  background-color: orange;
+  box-shadow: none;
+  color: white;
+  border: none;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#btnmore>a {
+  color: white; 
+  text-decoration: none;
+}
+
+#btnmore>a:focus {
+  outline: none;
+}
+/*---------style feedback page----*/
+#divform {
+  height: fit-content;
+}
+#divform> #para {
+  padding: 20px;
+}
+/*style form*/
+fieldset{
+  width: 50%;
+  margin: auto;
+  box-shadow: 4px 4px 5px #e6c1c1;
+  margin-bottom: 80px;
+}
+
+#feedback>#divcontrols>input[type=text], [type=email], select, [type=date] {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 50%;
+  margin-left: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+#feedback>#divcontrols>label {
+  padding: 12px 12px 12px 0;
+  display: flex;
+  flex-direction: row;
+  margin-left: 20px;
+  color: whitesmoke;
+}
+
+input[type=submit], [type=reset] {
+  width: 70%;
+  background-color: orange;
+  color: white;
+  padding: 12px 10px;
+  border: none;
+  border-radius: 4px;
+  display: block;
+  margin: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+input[type=submit]:hover, [type=reset]:hover {
+  background-color: black;
+
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*-------style movie pages-------*/
+.content p:not(.synopsis) {
+  text-align: center;
+  padding-bottom: 50px;
+  font-size: 20px;
+}
+
+/*-------style contacts page-----*/
+.contact {
+  text-align: center;
+  line-height: 30px;
+  font-size: 25px;
+  margin: 20px;
+  padding: 20px;
+}
+}
+
+/*-------style for mobile-------*/
+@media only screen and (max-width : 692px){
+
+.navbar{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+width: 100%;
+padding-top: 2%;
+padding-bottom: 2%;
+background-color: #000000;
+font-size: 20px;
+}
+
+.main_nav{
+display: none;
+}
+
+.show_nav{
+padding-top: 2%;
+display: flex;
+width: 100vw;
+height: 100vh;
+flex-direction: column;
+justify-content: flex-start;
+}
+
+.main_nav li{
+width: 100%;
+height: 50px;
+font-size: 25px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+padding: 0%;
+z-index: 1;
+}
+
+.main_nav {
+  background-color: #000000;
+  z-index: 1;
+}
+
+.main_nav li a {
+color: #f8f6f6;
+position: absolute;
+z-index: 6;
+}
+
+
+.menu_container {
+  height: fit-content;
+}
+.navbar_toggle {
+  width: 35px;
+  height: 5px;
+  background-color:red;
+  margin: 6px 0;
+}
+
+ 
+.logo_header{
+width: 100%;
+justify-content: space-between;
+margin-right: 2%;
+height: fit-content;
+margin-bottom: -5px;
+}
+
+h1, p {
+    color: white;
+}
+/*style home page*/
+body{
+    width: 100%;
+}
+
+.welcome h1, .content h1 {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 1.2px;
+}
+
+.par {
+    font-size: 10px;
+}
+
+/*style slideshow*/
+.mySlides {display: none;}
+    .mySlides img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 40%;
+    }
+
+    /*style slideshow*/
+    .slideshow-container {
+      width: 80%;
+      position: relative;
+      height: 40vh;
+      margin: auto;
+    }
+
+    /*Next and prev buttons*/
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 20%;
+      padding: 10px;
+      margin-top: -2px;
+      color: rgb(243, 10, 10);
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+  
+    /*Positioning the buttons*/
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    .prev {
+      left: 0;
+    }
+       /* Caption text */
+.text {
+  color: black;
+  font-size: 15px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.divnavdots {
+  padding-top: 7px;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.synopsis {
+  padding-top: 10px;
+  padding: 0%;
+  line-height: 20px;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/*style table*/
+#showtimes {width: 100%;}
+#showtimes .showtimes:not(.ticketprices th) {
+    color: white;
+    width: 100%;
+    border-collapse: collapse;
+    display: -ms-grid;
+    grid-template-columns: min-content min-content;
+    -ms-grid-rows: auto auto;
+    -ms-grid-columns: auto auto;
+}
+
+#tblshowtimes {
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+.showtimes td, .showtimes th, .ticketprices td, .ticketprices th {
+    padding: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.showtimes>th, .showtimes>tbody {
+    -ms-grid-rows: 2;
+    -ms-grid-columns: 2;
+}
+
+.showtimes, .ticketprices {
+  margin-top: 20px;
+}
+
+
+/* Flex - Cross Browser CSS */
+.showtimes>th {
+    display: flex;
+    flex-shrink: 5;
+    min-width: 90px;
+   }
+   .showtimes tbody {
+      display: flex;
+   }
+   .showtimes tr:not(#tr1){
+    display: flex;
+    flex-direction: column;
+    min-width: fit-content;
+    flex-shrink: 5;
+    background-color:rgb(161, 51, 37);
+    color: white;
+   }
+
+
+   .showtimes tr {
+      background-color: rgb(46, 38, 38);
+    }
+   
+    .showtimes td {
+     width: 40px;
+   }
+   
+   .showtimes td, .showtimes th {
+    display: block;
+   }
+
+   /*style pricing table*/
+    .ticketprices {
+      color: white;
+      background-color:orange;
+      width: fit-content;
+      margin-bottom: 20px;
+    }
+
+    .ticketprices tr:not(#tr1) {
+      background-color: #000000;
+    }
+
+    .ticketprices th {
+      display: inline-table;
+      width: 89px;
+    
+    }
+
+   /*style genre page*/
+#genre {
+    width: 100%;
+    margin: auto;
+}
+  
+  #para {
+    padding: 30px 5px 5px 5px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 1.3px;
+  }
+
+ html {
+   height: 100%;
+ }
+  
+  #genrelist>li {
+    list-style-type: none;
+    display: block;
+    text-align: center;
+    padding: 5px;
+    margin: auto 0 auto 0;
+  }
+  
+  #genrelist>li>a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 30px;
+    font-size: 25px;
+    color: white;
+  }
+  
+  /*style upcoming page*/
+  #divupcome {
+    padding-top: 20px;
+
+  }
+  
+
+  #divupcome>#divaction, #divupcome>#divanimation, #divupcome>#divcomedy, #divupcome>#divhorror, #divupcome>#divromance, #divupcome>#divscifi {
+    width: 80%;
+    height: fit-content;
+    border: 1px groove black;
+    margin: 10px;
+    margin: auto;
+    padding-top: 10px;
+    padding: 5px;
+    margin-top: 3px;
+  }
+
+  #divupcome>#divaction>h1, #divupcome>#divanimation>h1, #divupcome>#divcomedy>h1, #divupcome>#divhorror>h1, #divupcome>#divromance>h1, #divupcome>#divscifi>h1{
+    text-align: center;
+    padding: 10px;
+  }
+  
+  #divupcome>#divaction>img, #divanimation>img, #divcomedy>img, #divhorror>img, #divromance>img, #divscifi>img  {
+    height: 90%;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #btnmore {
+    Width: 100px;
+    height: 30px;
+    background-color: orange;
+    box-shadow: none;
+    color: white;
+    border: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+  }
+
+  .upcoming {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /*style register page*/
+     #feedback>#divcontrols {
+       display: flex;
+       flex-direction: column;
+     }
+  
+     
+      .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+      
+    }
+
+    /*style form*/
+fieldset{
+  width: 50%;
+  margin: auto;
+}
+#feedback>#divcontrols>input[type=text], [type=email], select, [type=date] {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 50%;
+  margin-left: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+#feedback>#divcontrols>label {
+  padding: 12px 12px 12px 0;
+  display: flex;
+  flex-direction: row;
+  margin-left: 20px;
+}
+
+input[type=submit], [type=reset] {
+  width: 70%;
+  background-color: orange;
+  color: white;
+  padding: 12px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  margin: 10px auto 0 auto;
+  display: block;
+}
+
+input[type=submit]:hover, [type=reset]:hover {
+  background-color: black;
+
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*------style movie pages------*/
+.content p:not(.synopsis) {
+  text-align: center;
+  padding: 50px;
+}
+
+.contact {
+  text-align: center;
+  line-height: 30px;
+  font-size: 25px;
+  margin: 20px;
+  padding: 20px;
+}
+#footer {
+  position: fixed;
+  bottom: 0;
+}
+} 
+
+
