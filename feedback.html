@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinemax</title>
+    <link rel="stylesheet" href="css/style5.css">
+  </head>
+  <body>
+    <div class="main">
+      <div class="topbar">
+        <div class="navbar">
+          <nav class="navbar">
+            <div class="logo_header">
+              <a href="index.html" class="logo"><img src="image4/logo/icon.png" class="logo" height="40px" width="100px"></a>
+                <div class="menu_container">
+                  <div class="navbar_toggle"></div>
+                  <div class="navbar_toggle"></div>
+                  <div class="navbar_toggle"></div>
+               </div>
+            </div>
+              
+                  
+            <ul class="main_nav">
+              <li>
+                <a href="index.html" class="nav_links">Home</a>
+              </li>
+              <li>
+                <a href="genre.html" class="nav_links">Genre</a>
+              </li>
+              <li>
+                <a href="Upcome.html" class="nav_links">Upcoming</a>
+              </li>
+              <li>
+                <a href="Contacts.html" class="nav_links">Contact Us</a>
+              </li>
+              <li>
+                <a href="feedback.html" class="nav_links">Feedback</a>
+              </li>
+            </ul>
+                    
+          </nav>
+        </div>
+
+        
+      </div>
+    </div>
+
+      <div id="divform">
+        <p id="para">
+          We would like to hear from you about your experiences at Cinemax. Please fill out the customer satisfaction form below at your earliest convenience.
+        </p>
+
+        <fieldset>
+    
+            <form id="feedback" name="feedback" action="feedback.html" method="post" onsubmit="validateform" mailto="pakomampane@gmail.com">
+              <div id="divcontrols">
+                
+                <label for="first name" caption="first name ">First name</label>
+                <input type="text" id="firstname" name="firstname" placeholder="firstname" required oninvalid="setCustomValidity('Please enter the first name!')" oninput="setCustomValidity('')" value="">
+                <label for="surname" caption="surname">Surname</label>
+                <input type="text" id="surname" name="surname" placeholder="surname" required oninvalid="setCustomValidity('Please enter the surname!')" oninput="setCustomValidity('')" value="">
+                <label for="email" caption="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="email" required oninvalid="setCustomValidity('Please enter the email!')" oninput="setCustomValidity('')" value="">
+                <label for="gender">Gender</label>
+                  <select id="gender" name="gender">
+                    <option value="0">Select...</option>
+                    <option value="F" place>Female</option>
+                    <option value="M">Male</option>
+                  </select>
+                <label for="DOB">Date of Birth</label>
+                <input type="date"  id="DOB" name="DOB" placeholder="username" required>   
+                <label for="username" caption="username">Tell us about your experience(s)</label>
+                <input type="text" id="username" name="username" placeholder="" required oninvalid="setCustomValidity('Please enter the username!')" oninput="setCustomValidity('')" value="">  
+                <input type="submit" value="Submit">
+                <input type="reset" value="Clear">
+              </div>
+            </form>
+       </fieldset>
+       </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+
+  <footer>
+    <P>Copyright@ Cinemax 2022</P>
+  </footer>
+</html>

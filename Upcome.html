@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcoming</title>
+    <link rel="stylesheet" href="css/style5.css">
+  </head>
+  <body>
+    <div class="main">
+      <div class="topbar">
+        <div class="navbar">
+          <nav class="navbar">
+            <div class="logo_header">
+              <a href="index.html" class="logo"><img src="image4/logo/icon.png" class="logo" height="40px" width="100px"></a>
+                <div class="menu_container">
+                  <div class="navbar_toggle"></div>
+                  <div class="navbar_toggle"></div>
+                  <div class="navbar_toggle"></div>
+               </div>
+            </div>
+              
+                  
+            <ul class="main_nav">
+              <li>
+                <a href="index.html" class="nav_links">Home</a>
+              </li>
+              <li>
+                <a href="genre.html" class="nav_links">Genre</a>
+              </li>
+              <li>
+                <a href="Upcome.html" class="nav_links">Upcoming</a>
+              </li>
+              <li>
+                <a href="Contacts.html" class="nav_links">Contact Us</a>
+              </li>
+              <li>
+                <a href="feedback.html" class="nav_links">Feedback</a>
+              </li>
+            </ul>
+                    
+          </nav>
+        </div>
+
+        
+      </div>
+       <div class="content2">
+            <h1 id="except">Upcoming movies</h1>
+
+             <p id="except" class="upcoming"> 
+                At Cinemax, we pride ourselves with giving our customers the latest and best blockbuster<br> films as early as possible.
+                We have a wide selection of movies that are yet to hit our<br> screens. Be sure to regularly check when your favourite will be on show.
+           </p>
+        
+            <div id="divupcome">
+         
+                <div class="noflex" id="divaction">
+                    <h1>ACTION</h1>
+                    <img src="image4/Action/memory.jpg" alt="memory">
+                    <a href="Action.html"><button id="btnmore">More like this</button></a>            
+               </div>
+
+                <div class="noflex" id="divanimation">
+                    <h1>ANIMATION</h1>
+                    <img src="image4/Animation/lightyear_ver4.jpg" alt="lightyear">
+                    <a href="Animation.html"><button id="btnmore">More like this</button></a>
+                </div>
+
+                <div class="noflex" id="divcomedy">
+                    <h1>COMEDY</h1>
+                    <img src="image4/Comedy/bodies_bodies_bodies.jpg" alt="bodies_bodies_bodies">
+                    <a href="Comedy.html"><button id="btnmore">More like this</button></a>
+               </div>
+
+                <div class="noflex" id="divhorror">
+                    <h1>HORROR</h1>
+                    <img src="image4/Horror/firestarter.jpg" alt="firestarter">
+                    <a href="Horror.html"><button id="btnmore">More like this</button></a>
+               </div>
+
+                <div class="noflex" id="divromance">
+                    <h1>ROMANCE</h1>
+                    <img src="image4/Romance/365 days.jpg" alt="365 days">
+                    <a href="Romance.html"><button id="btnmore">More like this</button></a>
+               </div>
+
+               <div class="noflex" id="divscifi">
+                   <h1>SCI-FI</h1>
+                  <img src="image4/Sci-fi/doctor_strange_in_the_multiverse_of_madness_ver5.jpg">
+                  <a href="Sci-fi.html"><button id="btnmore">More like this</button></a>
+               </div>
+           </div>
+       </div>
+       <script>
+ //nav menu controls//
+ const navToggle = document.querySelector(".navbar_toggle");
+            const links = document.querySelector(".main_nav");
+            
+            navToggle.addEventListener('click', function(){
+                links.classList.toggle("show_nav");
+            })
+     </script>
+    </body>
+
+    <footer>
+      <P>Copyright@ Cinemax 2022</P>
+    </footer>
+</html>
